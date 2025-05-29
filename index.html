@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>ওষুধ তথ্য ওয়েবসাইট</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ওষুধ তথ্য ওয়েবসাইট</h1>
+
+  <input type="text" id="searchBox" placeholder="ওষুধের নাম লিখুন..." />
+
+  <h2>নতুন ওষুধ যোগ করুন</h2>
+  <form id="addMedicineForm">
+    <input type="text" id="name" placeholder="ওষুধের নাম" required /><br />
+    <input type="text" id="ingredients" placeholder="উপাদান" required /><br />
+    <input type="text" id="uses" placeholder="কাজ" required /><br />
+    <input type="text" id="dosage" placeholder="খাওয়ার নিয়ম" required /><br />
+    <input type="file" id="image" accept="image/*" required /><br />
+    <button type="submit">যোগ করুন</button>
+  </form>
+
+  <h2>ওষুধ তালিকা</h2>
+  <div id="medicineList"></div>
+
+  <!-- Firebase SDKs -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
